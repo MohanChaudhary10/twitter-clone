@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;1,400;1,800&display=swap");
+
+:root {
+  --liner: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+.home-row {
+  display: flex;
+}
+
+.side-bar {
+  position: relative;
+  width: 250px;
+  min-height: 100vh;
+}
+
+.side-bar .navbar-row {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  min-height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-row {
+  margin-top: auto;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.user-row .icon-bx {
+  width: 45px;
+  border-radius: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: #1d9bf0;
+  margin-right: 12px;
+}
+
+.user-row .info .name-bx {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.user-row .info .user-id {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgb(113, 118, 123);
+}
+
+.side-bar .logo {
+  padding-block: 30px;
+  padding-left: 15px;
+}
+
+.side-bar .logo svg {
+  color: white;
+  width: 38px;
+  height: 38px;
+}
+
+.side-bar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.side-bar ul li {
+  padding: 14px 20px;
+  font-size: 19px;
+  border-radius: 20px;
+  line-height: normal;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.side-bar ul li:hover,
+.side-bar ul li.active {
+  background-color: #16181c;
+  font-weight: 800;
+}
+
+.side-bar ul li svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+  margin-top: -2px;
+}
+
+.wrapper {
+  padding: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  width: calc(100% - 250px);
+}
+
+.form-bx {
+  padding: 35px;
+}
+
+.form-bx input, .form-bx textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  line-height: 32px;
+  padding: 10px 15px;
+  margin: 0;
+  display: block;
+  border: 1px solid rgb(51, 54, 57);
+  border-radius: 10px;
+  outline: 0;
+  font-size: 17px;
+  resize: none;
+}
+
+.form-bx .post-btn{
+  font-size: 20px;
+  font-weight: bolder;
+  background: var(--liner);
+  background-color: #1d9bf0;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 15px;
+  padding: 35px;
+  border-radius: 10px;
+  background: #16181c;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ava {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ava svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #1da1f2;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.username .name {
+  line-height: normal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.username .uname {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.twitt .tt {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.twitt .tag {
+  text-decoration: none;
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.insight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.like svg:hover {
+  fill: crimson;
+  filter: drop-shadow(0 0 10px crimson);
+  cursor: pointer;
+}
